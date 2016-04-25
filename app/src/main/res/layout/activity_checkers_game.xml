@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="joriss.mychessboard.ChessGame">
+<!--TODO gridlayout (field) with gridview (pieces) over it?-->
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:paddingTop="0dp"
+        android:layout_height="360dp"
+        android:columnCount="10">
+
+        <!--todo android:background="@drawable/black_field" in JAVA code laten setten-->
+        
+       <!--regel 1, wit-zwart-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_column="0"
+            android:layout_columnSpan="9"
+            android:layout_row="0"
+            android:layout_gravity="top"
+            >
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f1"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f2"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f3"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f4"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f5"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+        </LinearLayout>
+
+
+        <!--regel 2, zwart-wit-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_column="0"
+            android:layout_columnSpan="9"
+            android:layout_row="1"
+            android:layout_gravity="top"
+            >
+
+            <ImageView
+                android:id="@+id/f6"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+            <ImageView
+                android:id="@+id/f7"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <ImageView
+                android:id="@+id/f8"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <ImageView
+                android:id="@+id/f9"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <ImageView
+                android:id="@+id/f10"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+
+
+
+        </LinearLayout>
+
+
+        <!--regel 3, wit-zwart-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_column="0"
+            android:layout_columnSpan="9"
+            android:layout_row="3"
+            android:layout_gravity="top"
+            >
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f11"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f12"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f13"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f14"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f15"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+        </LinearLayout>
+
+
+        <!--regel 4, zwart-wit-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_column="0"
+            android:layout_columnSpan="9"
+            android:layout_row="4"
+            android:layout_gravity="top"
+            >
+
+            <ImageView
+                android:id="@+id/f16"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+            <ImageView
+                android:id="@+id/f17"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <ImageView
+                android:id="@+id/f18"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <ImageView
+                android:id="@+id/f19"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <ImageView
+                android:id="@+id/f20"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+
+
+
+        </LinearLayout>
+
+
+        <!--regel 5, wit-zwart-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_column="0"
+            android:layout_columnSpan="9"
+            android:layout_row="5"
+            android:layout_gravity="top"
+            >
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f21"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f22"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f23"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f24"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f25"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+        </LinearLayout>
+
+
+        <!--regel 6, zwart-wit-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_column="0"
+            android:layout_columnSpan="9"
+            android:layout_row="6"
+            android:layout_gravity="top"
+            >
+
+            <ImageView
+                android:id="@+id/f26"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+            <ImageView
+                android:id="@+id/f27"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <ImageView
+                android:id="@+id/f28"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <ImageView
+                android:id="@+id/f29"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <ImageView
+                android:id="@+id/f30"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+
+
+
+        </LinearLayout>
+
+
+        <!--regel 7, wit-zwart-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_column="0"
+            android:layout_columnSpan="9"
+            android:layout_row="7"
+            android:layout_gravity="top"
+            >
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f31"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f32"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f33"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f34"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f35"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+        </LinearLayout>
+
+
+        <!--regel 8, zwart-wit-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_column="0"
+            android:layout_columnSpan="9"
+            android:layout_row="8"
+            android:layout_gravity="top"
+            >
+
+            <ImageView
+                android:id="@+id/f36"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+            <ImageView
+                android:id="@+id/f37"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <ImageView
+                android:id="@+id/f38"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <ImageView
+                android:id="@+id/f39"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <ImageView
+                android:id="@+id/f40"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+
+
+
+        </LinearLayout>
+
+
+        <!--regel 9, wit-zwart-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_column="0"
+            android:layout_columnSpan="9"
+            android:layout_row="9"
+            android:layout_gravity="top"
+            >
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f41"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f42"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f43"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f44"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+            <ImageView
+                android:id="@+id/f45"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+        </LinearLayout>
+
+
+        <!--regel 10, zwart-wit-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_column="0"
+            android:layout_columnSpan="9"
+            android:layout_row="10"
+            android:layout_gravity="top"
+            >
+
+            <ImageView
+                android:id="@+id/f46"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+            <ImageView
+                android:id="@+id/f47"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <ImageView
+                android:id="@+id/f48"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <ImageView
+                android:id="@+id/f49"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <ImageView
+                android:id="@+id/f50"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </GridLayout>
+
+</RelativeLayout>
+
+    <!--<GridView-->
+        <!--android:layout_width="72dp"-->
+        <!--android:layout_height="72dp"-->
+        <!--android:background="#AAAAAA"-->
+        <!--android:gravity="bottom"-->
+        <!--android:numColumns="8"-->
+        <!--android:id="@+id/chessboard"-->
+        <!--android:choiceMode="multipleChoice">-->
+
+        <!---->
+
+    <!--</GridView>-->
+
+
+    <!--
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:background="#AAAAAA" />
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="72dp"
+        >
+
+        <ImageView
+            android:id="@+id/block9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/image1" />
+
+        <ImageView
+            android:id="@+id/block10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/black_field" />
+
+        <ImageView
+            android:id="@+id/block11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/image1" />
+
+        <ImageView
+            android:id="@+id/block12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/black_field" />
+
+        <ImageView
+            android:id="@+id/block13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/image1" />
+
+        <ImageView
+            android:id="@+id/block14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/black_field" />
+
+        <ImageView
+            android:id="@+id/block15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/image1" />
+
+        <ImageView
+            android:id="@+id/block16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/black_field" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/block1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/image1" />
+
+        <ImageView
+            android:id="@+id/block2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/black_field" />
+
+        <ImageView
+            android:id="@+id/block3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/image1" />
+
+        <ImageView
+            android:id="@+id/block4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/black_field" />
+
+        <ImageView
+            android:id="@+id/block5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/image1" />
+
+      <ImageView
+            android:id="@+id/block6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/black_field" />
+
+        <ImageView
+            android:id="@+id/block7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/image1" />
+
+    <ImageView
+            android:id="@+id/block8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/black_field" />
+    </TableRow>
+-->
+
